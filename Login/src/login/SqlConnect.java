@@ -21,7 +21,8 @@ public class SqlConnect {
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login","roshan","1234567");
+            //System.out.println("Driver Registered Sucessfully");
+         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","30041997");
         JOptionPane.showMessageDialog(null,"Connected To Database");
         return con;
         }

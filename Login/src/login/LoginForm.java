@@ -130,9 +130,10 @@ public class LoginForm extends javax.swing.JFrame {
             rs=ps.executeQuery();
             if(rs.next()){
                 JOptionPane.showMessageDialog(null, "Welcome User");
-                Welcome w=new Welcome();
-                w.setVisible(true);
-                
+               // Welcome w=new Welcome();
+                   AfterLogin obj_af=new AfterLogin();
+                //w.setVisible(true);
+                obj_af.setVisible(true);
             }
             else
             {
